@@ -4,8 +4,18 @@ This repository contains a MPS implementation of the [CrySL](https://www.eclipse
 
 ## Dependencies
 
-To build the language, [mbeddr-platform](https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Mbeddr_Gradle_platform) needs to be accessible by MPS.
+To build the language, parts of the [mbeddr-platform](https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Mbeddr_Gradle_platform) need to be accessible by MPS.
+
+In recent MPS versions, necessary components may be installed as plugins from the JetBrains marketplace.
+In MPS go to `File`, `Settings` and `Plugins`. Then, search for and install the following plugins:
+
+- [`de.itemis.mps.editor.diagram`](https://plugins.jetbrains.com/plugin/13240-de-itemis-mps-editor-diagram)
+- [`com.mbeddr.mpsutil.modellisteners`](https://plugins.jetbrains.com/plugin/17130-com-mbeddr-mpsutil-modellisteners)
+- [`de.itemis.mps.grammarcells`](https://plugins.jetbrains.com/plugin/13242-de-itemis-mps-grammarcells)
+
+When prompted to install additional dependencies, accept that option.
+Finally, restart MPS and re-open this project to be ready to use it!
 
 ## MPS Version
 
-Currently the project still runs on the old 2020.3 version of MPS due to the iets3.opensource dependency not supporting any newer version so far.
+The project is known to work on MPS version 2021.2.1 when installing mentioned dependencies from the plugin marketplace.
