@@ -16,7 +16,6 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="n3z7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.net.ssl(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="nwfd" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet.http(com.mbeddr.mpsutil.httpsupport.rt/)" />
     <import index="2t8e" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.crypto.dsig.spec(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="6nfx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.security.auth.x500(JDK/)" />
@@ -36,9 +35,6 @@
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -4529,84 +4525,6 @@
             <ref role="gkoRJ" node="77$2yxitnNC" resolve="ciph" />
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3DZmox" id="77$2yxito8h">
-    <property role="TrG5h" value="Cookie" />
-    <node concept="3uibUv" id="77$2yxito8i" role="1yEc0o">
-      <ref role="3uigEE" to="nwfd:~Cookie" resolve="Cookie" />
-    </node>
-    <node concept="3DZmoB" id="77$2yxito8j" role="3DZmv6">
-      <node concept="2Hjy6O" id="77$2yxitoYB" role="3DZmuy">
-        <property role="TrG5h" value="cookieName" />
-        <node concept="17QB3L" id="77$2yxitoYA" role="2HiiPi" />
-      </node>
-      <node concept="2Hjy6O" id="77$2yxitoYO" role="3DZmuy">
-        <property role="TrG5h" value="cookieValue" />
-        <node concept="17QB3L" id="77$2yxitoYM" role="2HiiPi" />
-      </node>
-      <node concept="2Hjy6O" id="77$2yxitoZ7" role="3DZmuy">
-        <property role="TrG5h" value="secure" />
-        <node concept="10P_77" id="77$2yxitoZ5" role="2HiiPi" />
-      </node>
-    </node>
-    <node concept="3DZmo_" id="77$2yxito8k" role="3DZmv4">
-      <node concept="3DZmon" id="77$2yxitoZU" role="3DZmuH">
-        <property role="TrG5h" value="Con" />
-        <node concept="gjU3G" id="77$2yxitoZV" role="gjZaj">
-          <ref role="gjVmy" to="nwfd:~Cookie.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="Cookie" />
-          <node concept="3DZmol" id="77$2yxitp02" role="gjVns">
-            <node concept="gkoRC" id="77$2yxitp00" role="gkqJZ">
-              <ref role="gkoRJ" node="77$2yxitoYB" resolve="cookieName" />
-            </node>
-          </node>
-          <node concept="3DZmol" id="77$2yxitp0o" role="gjVns">
-            <node concept="gkoRC" id="77$2yxitp0m" role="gkqJZ">
-              <ref role="gkoRJ" node="77$2yxitoYO" resolve="cookieValue" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="20kzeY" id="77$2yxitp0J" role="3DZmuH" />
-      <node concept="3DZmon" id="77$2yxitp1T" role="3DZmuH">
-        <property role="TrG5h" value="SetSecure" />
-        <node concept="gjU3G" id="77$2yxitp1U" role="gjZaj">
-          <ref role="gjVmy" to="nwfd:~Cookie.setSecure(boolean)" resolve="setSecure" />
-          <node concept="3DZmol" id="77$2yxitp2c" role="gjVns">
-            <node concept="gkoRC" id="77$2yxitp2a" role="gkqJZ">
-              <ref role="gkoRJ" node="77$2yxitoZ7" resolve="secure" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1h0U3S" id="77$2yxito8l" role="3DZmuV">
-      <node concept="1y6fP7" id="77$2yxitp2r" role="2HaykH">
-        <node concept="1y6fSb" id="77$2yxitp2y" role="1y6fPo">
-          <ref role="1y6fS8" node="77$2yxitp1T" resolve="SetSecure" />
-        </node>
-        <node concept="1y6fSb" id="77$2yxitp2n" role="1y6fQO">
-          <ref role="1y6fS8" node="77$2yxitoZU" resolve="Con" />
-        </node>
-      </node>
-    </node>
-    <node concept="3DZmo$" id="77$2yxitp2_" role="3DZmuU">
-      <node concept="2CQV6U" id="77$2yxitp30" role="3DZmuY">
-        <node concept="2$dyII" id="77$2yxitp3f" role="2CQV6T">
-          <node concept="3clFbT" id="77$2yxitp3_" role="1ysvkh">
-            <property role="3clFbU" value="true" />
-          </node>
-          <node concept="gkoRC" id="77$2yxitp2Z" role="1ysvk5">
-            <ref role="gkoRJ" node="77$2yxitoZ7" resolve="secure" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3DZmoq" id="77$2yxitp3H" role="3DZmuS">
-      <node concept="3kw8lT" id="77$2yxitp3N" role="3DZmv1">
-        <property role="TrG5h" value="generatedCookie" />
-        <node concept="3kw8PP" id="77$2yxitp3R" role="3kw8l0" />
       </node>
     </node>
   </node>
