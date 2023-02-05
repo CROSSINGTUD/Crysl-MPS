@@ -90,21 +90,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
-    <language id="a64290c9-c9fe-49ad-9e7c-82ede35afdeb" name="CogniCryptChecks">
-      <concept id="103124610882049017" name="CogniCryptChecks.structure.CogniCryptError" flags="ng" index="26lWMK">
-        <property id="103124610882302302" name="line" index="26kMSn" />
-        <property id="103124610882049019" name="text" index="26lWMM" />
-        <property id="103124610882049018" name="rule" index="26lWMN" />
-        <property id="103124610882049020" name="richText" index="26lWMP" />
-      </concept>
-      <concept id="8220491952365167013" name="CogniCryptChecks.structure.CogniCryptStatementErrors" flags="ng" index="pIYL5">
-        <child id="8220491952365167014" name="errors" index="pIYL6" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -150,14 +136,6 @@
               <node concept="3cmrfG" id="5iCyJbsKrVM" role="37wK5m">
                 <property role="3cmrfH" value="47" />
               </node>
-            </node>
-          </node>
-          <node concept="pIYL5" id="6sPjCWTtpD6" role="lGtFl">
-            <node concept="26lWMK" id="6sPjCWTtpD5" role="pIYL6">
-              <property role="26lWMN" value="ConstraintError" />
-              <property role="26lWMM" value="First parameter (with value 47) should be any of {128, 192, 256}." />
-              <property role="26lWMP" value="ConstraintError violating CrySL rule for javax.crypto.KeyGenerator." />
-              <property role="26kMSn" value="keyGen.init(47);" />
             </node>
           </node>
         </node>
@@ -207,14 +185,6 @@
               <node concept="37vLTw" id="5iCyJbsKrW4" role="37wK5m">
                 <ref role="3cqZAo" node="5iCyJbsKrVO" resolve="secretKey" />
               </node>
-            </node>
-          </node>
-          <node concept="pIYL5" id="6sPjCWTtpD4" role="lGtFl">
-            <node concept="26lWMK" id="6sPjCWTtpD3" role="pIYL6">
-              <property role="26lWMN" value="RequiredPredicateError" />
-              <property role="26lWMM" value="Second parameter was not properly generated as generatedKey." />
-              <property role="26lWMP" value="RequiredPredicateError violating CrySL rule for javax.crypto.Cipher." />
-              <property role="26kMSn" value="c.init(Cipher.ENCRYPT_MODE, secretKey);" />
             </node>
           </node>
         </node>
@@ -308,14 +278,6 @@
             </node>
             <node concept="liA8E" id="5iCyJbsKrm3" role="2OqNvi">
               <ref role="37wK5l" to="jgjw:~Signature.sign()" resolve="sign" />
-            </node>
-          </node>
-          <node concept="pIYL5" id="6sPjCWTtpD2" role="lGtFl">
-            <node concept="26lWMK" id="6sPjCWTtpD1" role="pIYL6">
-              <property role="26lWMN" value="TypestateError" />
-              <property role="26lWMM" value="Unexpected call to method sign on object of type java.security.Signature. Expect a call to one of the following methods initSign,update." />
-              <property role="26lWMP" value="TypestateError violating CrySL rule for java.security.Signature." />
-              <property role="26kMSn" value="s.sign();" />
             </node>
           </node>
         </node>

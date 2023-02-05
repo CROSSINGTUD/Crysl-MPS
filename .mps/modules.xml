@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/CogniCryptChecks.sandbox/CogniCryptChecks.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Crysl-MPS.build/Crysl-MPS.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CryslMPS.runtime/CryslMPS.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">
